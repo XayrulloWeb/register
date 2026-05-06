@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TikTok Login</title>
-
+  <title>Ro'yxatdan o'tish</title>
   <style>
     * {
       margin: 0;
@@ -22,16 +21,14 @@
       justify-content: center;
     }
 
-    .login-box {
+    .register-box {
       width: 500px;
       text-align: center;
       margin-top: -20px;
     }
 
     .logo {
-      margin-bottom: 45px;
-      font-size: 18px;
-      color: #000;
+      margin-bottom: 30px;
     }
 
     .logo img {
@@ -67,10 +64,6 @@
       outline: none;
     }
 
-    input::placeholder {
-      color: #777;
-    }
-
     button {
       width: 500px;
       height: 52px;
@@ -84,19 +77,19 @@
       margin-top: 12px;
     }
 
-    .register {
+    .back {
       margin-top: 26px;
       font-size: 15px;
       color: #8a8f98;
     }
 
-    .register a {
+    .back a {
       color: #ff2c55;
       text-decoration: none;
     }
 
     @media (max-width: 600px) {
-      .login-box,
+      .register-box,
       input,
       button {
         width: 90%;
@@ -104,34 +97,29 @@
     }
   </style>
 </head>
-
 <body>
-  <div class="login-box">
-
+  <div class="register-box">
     <div class="logo">
-      <img src="logo.svg" alt="TikTok">
+      <img src="logo.svg" alt="Register logo">
     </div>
 
-    <h1>TikTok-ga kirish</h1>
+    <h1>Ro'yxatdan o'tish</h1>
 
     <p class="subtitle">
-      Akkauntingizni boshqaring, bildirishnomalarni tekshiring va<br>
-      videolarni tomosha qiling.
+      Yangi akkaunt yarating va platformadan foydalanishni boshlang.
     </p>
 
-    <form onsubmit="event.preventDefault();">
-      <input type="text" placeholder="Telefon / Pochta / Foydalanuvchi nomi">
-      <input type="password" placeholder="Parol">
-
-      <button type="submit">Tizimga kirish</button>
+    <form onsubmit="event.preventDefault(); alert('Ro\'yxatdan o\'tish muvaffaqiyatli!');">
+      <input type="text" placeholder="Foydalanuvchi nomi" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Parol" required>
+      <button type="submit">Ro'yxatdan o'tish</button>
     </form>
 
-    <p class="register">
-      Ro'yxatdan o'tmaganmisiz?
-      <a href="register.html">Ro'yxatdan o'tish</a>
+    <p class="back">
+      Akkauntingiz bormi?
+      <a href="index.html">Tizimga kirish</a>
     </p>
-
   </div>
 </body>
 </html>
-
