@@ -1,6 +1,13 @@
-﻿<svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Facebook logo</title>
-  <desc id="desc">Blue rounded square with white lowercase f.</desc>
-  <rect x="4" y="4" width="84" height="84" rx="22" fill="#1877F2"/>
-  <path d="M53.7 26H61V14.4C59.7 14.2 55.3 13.8 50.1 13.8C39.3 13.8 31.9 20.4 31.9 32.6V42.8H20V55.8H31.9V88H46.4V55.8H57.8L59.6 42.8H46.4V34C46.4 30.2 47.5 26 53.7 26Z" fill="white"/>
+﻿<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Auth logo</title>
+  <desc id="desc">Rounded square app logo with shield mark.</desc>
+  <defs>
+    <linearGradient id="g" x1="12" y1="12" x2="84" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D7FF9"/>
+      <stop offset="1" stop-color="#1158CC"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="80" height="80" rx="22" fill="url(#g)"/>
+  <path d="M48 28L63 34V46C63 57.3 56.3 66 48 69C39.7 66 33 57.3 33 46V34L48 28Z" fill="white"/>
+  <path d="M48 38C45.8 38 44 39.8 44 42C44 43.5 44.8 44.8 46 45.5V52H50V45.5C51.2 44.8 52 43.5 52 42C52 39.8 50.2 38 48 38Z" fill="#2D7FF9"/>
 </svg>

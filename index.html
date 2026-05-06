@@ -3,151 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Facebook Login</title>
-
+  <title>Account Login</title>
   <style>
+    :root {
+      --bg: #f2f5fa;
+      --card: #ffffff;
+      --text: #1b2430;
+      --muted: #5d6b82;
+      --line: #d8dfeb;
+      --primary: #1f6feb;
+      --primary-hover: #165cc6;
+      --focus: rgba(31, 111, 235, 0.18);
+    }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
 
     body {
-      width: 100%;
       min-height: 100vh;
-      background: #f0f2f5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: radial-gradient(circle at top, #f8fbff 0%, var(--bg) 50%, #eef2f8 100%);
+      display: grid;
+      place-items: center;
+      padding: 24px;
     }
 
-    .login-box {
-      width: 500px;
-      text-align: center;
-      margin-top: -20px;
-      background: #ffffff;
-      padding: 34px 28px;
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card);
+      border: 1px solid #e6ebf3;
       border-radius: 16px;
-      box-shadow: 0 10px 28px rgba(24, 119, 242, 0.16);
+      box-shadow: 0 14px 38px rgba(13, 36, 74, 0.1);
+      padding: 28px;
+      text-align: center;
     }
 
     .logo {
-      margin-bottom: 45px;
-      font-size: 18px;
-      color: #000;
+      margin-bottom: 16px;
     }
 
     .logo img {
-      width: 90px;
-      height: auto;
+      width: 64px;
+      height: 64px;
+      display: block;
+      margin: 0 auto;
     }
 
     h1 {
-      font-size: 30px;
-      font-weight: 700;
-      color: #1c1e21;
-      margin-bottom: 18px;
+      font-size: 32px;
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 12px;
     }
 
     .subtitle {
-      font-size: 19px;
-      line-height: 25px;
-      color: #606770;
-      margin-bottom: 30px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.45;
+      margin-bottom: 22px;
+    }
+
+    form {
+      text-align: left;
     }
 
     input {
-      width: 500px;
-      height: 53px;
-      display: block;
-      margin-bottom: 13px;
-      padding: 0 15px;
-      border: 1px solid #ccd0d5;
+      width: 100%;
+      height: 52px;
+      border: 1px solid var(--line);
       border-radius: 10px;
-      background: #ffffff;
-      font-size: 16px;
-      color: #333;
+      padding: 0 14px;
+      font-size: 17px;
+      color: var(--text);
+      background: #fff;
+      margin-bottom: 12px;
       outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
 
     input::placeholder {
-      color: #777;
+      color: #7a879c;
     }
 
     input:focus {
-      border-color: #1877f2;
-      box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.16);
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--focus);
     }
 
     button {
-      width: 500px;
+      width: 100%;
       height: 52px;
-      border: none;
+      border: 0;
       border-radius: 10px;
-      background: #1877f2;
-      color: white;
-      font-size: 22px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 24px;
       font-weight: 700;
       cursor: pointer;
-      margin-top: 12px;
+      margin-top: 4px;
       transition: background 0.2s ease;
     }
 
     button:hover {
-      background: #1669d8;
+      background: var(--primary-hover);
     }
 
-    .register {
-      margin-top: 26px;
-      font-size: 15px;
-      color: #606770;
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 16px;
     }
 
-    .register a {
-      color: #1877f2;
+    .footer a {
+      color: var(--primary);
+      font-weight: 700;
       text-decoration: none;
-      font-weight: 600;
     }
 
-    @media (max-width: 600px) {
-      .login-box,
-      input,
-      button {
-        width: 90%;
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 22px 16px;
+        border-radius: 12px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .subtitle {
+        font-size: 16px;
       }
     }
   </style>
 </head>
-
 <body>
-  <div class="login-box">
-
+  <main class="card">
     <div class="logo">
-      <img src="logo.svg" alt="Facebook">
+      <img src="logo.svg" alt="Auth logo">
     </div>
 
-    <h1>Facebook-ga kirish</h1>
+    <h1>Hisobga kirish</h1>
 
     <p class="subtitle">
-      Akkauntingizni boshqaring, bildirishnomalarni tekshiring va<br>
-      videolarni tomosha qiling.
+      Profilingizni boshqaring, bildirishnomalarni tekshiring va davom eting.
     </p>
 
     <form onsubmit="event.preventDefault();">
-      <input type="text" placeholder="Telefon / Pochta / Foydalanuvchi nomi">
-      <input type="password" placeholder="Parol">
-
-      <button type="submit">Tizimga kirish</button>
+      <input type="text" placeholder="Telefon / Email / Foydalanuvchi nomi" required>
+      <input type="password" placeholder="Parol" required>
+      <button type="submit">Kirish</button>
     </form>
 
-    <p class="register">
-      Ro'yxatdan o'tmaganmisiz?
+    <p class="footer">
+      Akkauntingiz yo'qmi?
       <a href="register.html">Ro'yxatdan o'tish</a>
     </p>
-
-  </div>
+  </main>
 </body>
 </html>
-
 
