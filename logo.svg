@@ -1,0 +1,8 @@
+﻿<svg width="260" height="92" viewBox="0 0 260 92" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Register logo</title>
+  <desc id="desc">Abstract neon R mark with Register wordmark.</desc>
+  <rect x="8" y="8" width="76" height="76" rx="20" fill="#111111"/>
+  <path d="M30 66V26H50.5C60.2 26 66 31.7 66 39.8C66 45.6 62.9 49.8 57.5 51.5L67.2 66H56.8L48.7 53.5H39.2V66H30ZM39.2 45.6H49.2C53.4 45.6 56 43.4 56 39.9C56 36.3 53.4 34.2 49.2 34.2H39.2V45.6Z" fill="#00F2EA"/>
+  <path d="M35 62V22H55.5C65.2 22 71 27.7 71 35.8C71 41.6 67.9 45.8 62.5 47.5L72.2 62H61.8L53.7 49.5H44.2V62H35ZM44.2 41.6H54.2C58.4 41.6 61 39.4 61 35.9C61 32.3 58.4 30.2 54.2 30.2H44.2V41.6Z" fill="#FF0050" fill-opacity="0.9"/>
+  <text x="99" y="56" fill="#111111" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="700" letter-spacing="0.4">Register</text>
+</svg>
