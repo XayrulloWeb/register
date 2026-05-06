@@ -1,13 +1,12 @@
 ﻿<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Auth logo</title>
-  <desc id="desc">Rounded square app logo with shield mark.</desc>
+  <title id="title">Letter f logo</title>
+  <desc id="desc">Rounded square icon with lowercase f.</desc>
   <defs>
-    <linearGradient id="g" x1="12" y1="12" x2="84" y2="84" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2D7FF9"/>
-      <stop offset="1" stop-color="#1158CC"/>
+    <linearGradient id="g" x1="10" y1="10" x2="86" y2="86" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A7CFF"/>
+      <stop offset="1" stop-color="#1553B7"/>
     </linearGradient>
   </defs>
   <rect x="8" y="8" width="80" height="80" rx="22" fill="url(#g)"/>
-  <path d="M48 28L63 34V46C63 57.3 56.3 66 48 69C39.7 66 33 57.3 33 46V34L48 28Z" fill="white"/>
-  <path d="M48 38C45.8 38 44 39.8 44 42C44 43.5 44.8 44.8 46 45.5V52H50V45.5C51.2 44.8 52 43.5 52 42C52 39.8 50.2 38 48 38Z" fill="#2D7FF9"/>
+  <path d="M54 22C48.6 22 45 25.4 45 31V37H39V45H45V74H54V45H61L62 37H54V32.5C54 31.2 54.6 30 57.2 30H62V22.8C60.6 22.5 57.9 22 54 22Z" fill="white"/>
 </svg>
